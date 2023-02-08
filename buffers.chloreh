@@ -167,3 +167,21 @@ ldr0 pushi EOF pushp close_mem jeq
 :write_buffer_end
 ret
 
+
+
+    4 bytes: magic number
+
+    4 bytes: alignment of the code
+
+    4 bytes: alignment of the heap
+
+    4 bytes: padding
+
+    8 bytes: size of the heap
+
+    8 bytes: size of the stack
+
+    8 bytes: entry point
+
+    0 or more bytes: code
+
